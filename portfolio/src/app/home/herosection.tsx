@@ -1,6 +1,5 @@
 "use client"
 import SplitText from "@/blocks/TextAnimations/SplitText/SplitText";
-import FallingText from "./fallingText";
 // import SplitText from "./";
 const HeroSection = () => {
   const handleAnimationComplete = () => {
@@ -25,7 +24,6 @@ const HeroSection = () => {
         <h1 className="text-3xl font-bold text-center text-gray-800 dark:text-gray-200">
           Welcome to My Portfolio
         </h1>
-        <FallingText />
         <p className="text-lg text-center text-gray-600 dark:text-gray-400">
           Discover my projects, skills, and experiences.
         </p>

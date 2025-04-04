@@ -3,7 +3,6 @@
 import ModeToggle from "./mode-toggle";
 import { AvatarDemo } from "./avatar";
 import Link from "next/link";
-import Image from "next/image";
 import SocialIcons from "./socialIcons";
 import { useState } from "react";
 import { AlignCenter, AlignJustify, ShieldX } from "lucide-react";
