@@ -5,7 +5,7 @@ import { AvatarDemo } from "./avatar";
 import Link from "next/link";
 import SocialIcons from "./socialIcons";
 import { useState } from "react";
-import { AlignCenter, AlignJustify, ShieldX } from "lucide-react";
+import { AlignCenter, ShieldX } from "lucide-react";
  type navType = {
   id: number;
   link: string;

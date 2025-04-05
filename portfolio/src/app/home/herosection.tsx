@@ -1,25 +1,30 @@
 "use client"
-import SplitText from "@/blocks/TextAnimations/SplitText/SplitText";
+
+import RotatingText from "@/blocks/TextAnimations/RotatingText/RotatingText";
+
 // import SplitText from "./";
 const HeroSection = () => {
-  const handleAnimationComplete = () => {
-    console.log('All letters have animated!');
-  };
+ 
   return (
     <div className="h-[500px] flex items-center justify-center bg-blue-300 dark:bg-blue-950">
       <div className="flex flex-col items-center justify-center gap-y-5">
      
 
-<SplitText
-  text="Hello World!, My Name is Netochukwu Ronaldo"
-  className="text-2xl font-semibold text-center"
-  delay={150}
-  animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-  animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-  threshold={0.2}
-  rootMargin="-50px"
-  onLetterAnimationComplete={handleAnimationComplete}
+<div className="flex flex-col lg:flex-row gap-4 items-center">
+  <h1>Here at Netocodes We build</h1>
+<RotatingText
+  texts={['E-Cormerce Websites', 'Buisness Websites', 'Logistics Websites', 'Everything Website Related']}
+  mainClassName="px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+  staggerFrom={"last"}
+  initial={{ y: "100%" }}
+  animate={{ y: 0 }}
+  exit={{ y: "-120%" }}
+  staggerDuration={0.025}
+  splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+  transition={{ type: "spring", damping: 30, stiffness: 400 }}
+  rotationInterval={2000}
 />
+</div>
 
         <h1 className="text-3xl font-bold text-center text-gray-800 dark:text-gray-200">
           Welcome to My Portfolio
