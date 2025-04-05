@@ -35,7 +35,7 @@ const navLinks: navType[] = [
            </Link>
 </div>
            {navLinks && (
-            <ul className="hidden lg:flex underline underline-offset-4 decoration-[#1013d7] gap-x-5 items-center justify-end">
+            <ul className="hidden lg:flex underline underline-offset-4 decoration-[#1013d7] dark:decoration-cyan-300 gap-x-5 items-center justify-end">
               {navLinks.map((nav) => (
                 <li key={nav.id} className="hover:bg-background/30 rounded-lg">
                   <Link href={nav.link}>{nav.title}</Link>
@@ -49,7 +49,7 @@ const navLinks: navType[] = [
 <div className="flex items-center lg:flex-row-reverse gap-x-2 lg:gap-x-4">
 <ModeToggle />
 <div className="lg:hidden">
-  <button onClick={handleToggle} className="flex items-center justify-center rounded-full p-2 text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-700">
+  <button onClick={handleToggle} className="cursor-pointer flex items-center justify-center rounded-full p-2 text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-cyan-300 dark:hover:text-gray-800 transition duration-300 ease-in-out">
     {isOpen ? <ShieldX  size={24} /> : <AlignCenter size={24} />}
   </button>
 </div>
