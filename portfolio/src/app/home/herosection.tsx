@@ -2,19 +2,18 @@
 
 import Particles from "@/blocks/Backgrounds/Particles/Particles";
 import RotatingText from "@/blocks/TextAnimations/RotatingText/RotatingText";
-
-// import SplitText from "./";
+import { Button } from "@/components/ui/button";
 const HeroSection = () => {
  
   return (
-    <div className="h-dvh text-[#c728eb] relative flex flex-col gap-y-8 items-center justify-center bg-blue-300 dark:bg-blue-950">
+    <div className=" h-full lg:h-dvh text-[#c728eb] relative flex flex-col gap-y-8 items-center justify-center bg-blue-300 dark:bg-blue-950">
  <div className="absolute w-full h-full  left-1/2 -translate-x-1/2  overflow-hidden">
  <Particles
     particleColors={['#c728eb', '#28a0eb', '#342bd6']}
     particleCount={400}
     particleSpread={20}
     speed={0.3}
-    particleBaseSize={200}
+    particleBaseSize={300}
     moveParticlesOnHover={true}
     alphaParticles={false}
     disableRotation={false}
@@ -35,7 +34,6 @@ texts={[
   'Event Hub websites',  
   'News Platform websites',  
   'Job Board websites',  
-  'Community Forum websites'  
 ]}
   mainClassName="px-2 sm:px-2 text-3xl md:px-3 dark:bg-cyan-300 bg-blue-800 text-white  dark:text-black overflow-hidden py-3 lg:py-3 justify-center rounded-lg"
   staggerFrom={"last"}
@@ -64,6 +62,14 @@ texts={[
         <p className="text-lg text-center text-gray-600 dark:text-gray-400">
           Discover my projects, skills, and experiences.
         </p>
+        <div className="flex gap-x-4">
+          <Button className="bg-[#1013d7] text-white cursor-pointer dark:text-black dark:bg-cyan-300" size="lg">
+            View Projects
+          </Button>
+          <Button className="bg-[#1013d7] text-white cursor-pointer dark:text-black dark:bg-cyan-300" size="lg">
+            Contact Me
+          </Button>
+        </div>
        </div>
       </div>
 </div>
