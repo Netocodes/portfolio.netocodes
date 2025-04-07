@@ -23,7 +23,7 @@ const AboutPage = () => {
         <div className="w-full py-4">
             <Image src={"https://muhaiminshihab.github.io/assets/images/author_1.jpg"} className="rounded-full shadow-2xl size-28 object-center object-cover  " alt="Profile Image"  width={100} height={100}/>
         </div>
-        <h1 className="text-4xl font-extrabold text-gray0700">😉Hi, I'm NetoCodes </h1>
+        <h1 className="text-4xl font-extrabold text-gray0700">😉Hi, I&apos;m NetoCodes </h1>
         <p className="px-3 my-3 text-lg">Experienced Software Developer specializing in PHP, Laravel, JavaScript, Vue.js, Next.js, MySQL, and more. I love to explore new tools and technologies.</p>
     <div>
     <div className="relative w-full bg-black/25 py-12 rounded-lg shadow-lg">
