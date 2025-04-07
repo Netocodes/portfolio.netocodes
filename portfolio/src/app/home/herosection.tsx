@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
  
   return (
-    <div className=" h-full lg:h-dvh text-[#c728eb] relative flex flex-col gap-y-8 items-center justify-center bg-blue-300 dark:bg-blue-950">
+    <div className=" h-[90dvh] lg:h-dvh text-[#c728eb] relative flex flex-col gap-y-8 items-center justify-center bg-blue-300 dark:bg-blue-950">
  <div className="absolute w-full h-full  left-1/2 -translate-x-1/2  overflow-hidden">
  <Particles
     particleColors={['#c728eb', '#28a0eb', '#342bd6']}
@@ -20,7 +20,7 @@ const HeroSection = () => {
   />
  </div>
 
-<div className="flex flex-col gap-y-6">
+<div className="flex flex-col gap-y-12 px-4">
 <div className=" flex flex-col lg:flex-row gap-4 items-center">
   <h1 className="text-gray-800 dark:text-gray-300">I am Netochukwu and i build:</h1>
 <RotatingText
@@ -55,7 +55,7 @@ texts={[
      
 
 
-       <div className=" flex flex-col items-center justify-center gap-y-5">
+       <div className=" flex flex-col items-center justify-center gap-y-8  lg:gap-y-5">
        <h1 className="text-3xl font-bold text-center text-gray-800 dark:text-gray-200">
           Welcome to My Portfolio
         </h1>

@@ -4,13 +4,13 @@ import "./globals.css";
 import Footer from "./components/footer";
 import NavbarComp from "./components/navbar";
 
-
 export const metadata: Metadata = {
   title: "Netochukwu Codes || Fullstack developer & Tech enthusiast ",
   description: "",
 };
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from "./components/theme-provider";
+import Image from "next/image";
  
 const inter = Inter({
   subsets: ['latin'],
@@ -36,7 +36,7 @@ export default function RootLayout({
         <NavbarComp />
         </header>
         {children}  
-        <footer className="relative bottom-0">
+        <footer className="w-full fixed bottom-0">
        <Footer />
 
         </footer>
