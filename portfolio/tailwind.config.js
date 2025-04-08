@@ -1,8 +1,6 @@
 module.exports = {
     content: [
       "./src/**/*.{js,jsx,ts,tsx}",
-      "path/to/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
-      "path/to/@material-tailwind/react/theme/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
       extend: {
@@ -11,6 +9,27 @@ module.exports = {
           light:"#1013d7",
         }
       },
+      
+        animation: {
+          scrollDown: 'scrollDown 2s infinite',
+        },
+        keyframes: {
+          scrollDown: {
+            '0%': { 
+              opacity: '0',
+              transform: 'rotate(-45deg) translate(0, 0)',
+            },
+            '50%': { 
+              opacity: '1',
+            },
+            '100%': { 
+              opacity: '0',
+              transform: 'rotate(-45deg) translate(-10px, 10px)',
+            },
+          },
+        },
+      
     },
+    
     plugins: [],
   }

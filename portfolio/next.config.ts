@@ -8,8 +8,15 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'muhaiminshihab.github.io',
         port: '',
-        pathname: '/assets/images/author_1.jpg',
+        pathname: '/**',
       },
+    {
+        protocol: 'https',
+        hostname: 'picsum.photos',
+        port: '',
+        pathname: '/**',
+      },
+    
     ],
   },
 };

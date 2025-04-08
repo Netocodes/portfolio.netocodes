@@ -35,7 +35,7 @@ export default function RootLayout({
         <NavbarComp />
         </header>
         {children}  
-        <footer className="w-full fixed bottom-0">
+        <footer className="w-full  bottom-0">
        <Footer />
 
         </footer>
