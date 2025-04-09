@@ -118,6 +118,16 @@
   }
   body {
     @apply bg-background text-foreground;
+    
   }
 }
-
+*{
+  scroll-behavior: smooth;
+}
+.grad-light {
+  /* background: linear-gradient(to bottom, #06b6d4, #2563eb, #6366f1); */
+  background: conic-gradient(at bottom left, #e0e7ff, #22d3ee, #d946ef);
+}
+.grad-dark {
+  background: conic-gradient(at right, #dcfce7, #0c4a6e, transparent);
+}

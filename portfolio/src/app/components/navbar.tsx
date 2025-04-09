@@ -25,7 +25,7 @@ const navLinks: navType[] = [
     <>
       
     
-<nav className={`fixed top-0 px-5 py-3 left-1/2 mt-2 md:mt-5 -translate-x-1/2 z-[50] w-11/12 flex flex-col  max-w-7xl items-center justify-between  bg-background/20 backdrop-blur-lg lg:rounded-full ${isOpen ? "rounded-sm" : "rounded-full"} `}>
+<nav className={`fixed top-0 px-5 py-3 left-1/2 mt-5 -translate-x-1/2 z-[50] w-11/12 flex flex-col  max-w-7xl items-center justify-between  bg-background/20 backdrop-blur-lg lg:rounded-full ${isOpen ? "rounded-sm" : "rounded-full"} `}>
 <div className="flex items-center justify-between w-full">
 
 <div className="flex items-center gap-x-3">
@@ -58,7 +58,7 @@ const navLinks: navType[] = [
 </div>
     
 </div>
-{/* hide social icons on mduim and small screens and leave mode toggler on all   */}
+{/* hide social icons on meduim and small screens and leave mode toggler on all   */}
 </div>
 
 {isOpen && (
