@@ -9,20 +9,20 @@ const HeroSection = () => {
     <div className="grad-dark  h-[90dvh] lg:h-dvh  relative flex flex-col gap-y-8 items-center justify-center ">
  <div className="absolute w-full h-full  left-1/2 -translate-x-1/2  overflow-hidden">
  <Particles
-    particleColors={['#c728eb', '#28a0eb', '#342bd6']}
-    particleCount={400}
+    particleColors={['#eee', '#28a0eb', '#342bd6', '#3fda20', '#20da99']}
+    particleCount={500}
     particleSpread={20}
     speed={0.3}
-    particleBaseSize={300}
+    particleBaseSize={500}
     moveParticlesOnHover={true}
     alphaParticles={false}
     disableRotation={false}
   />
  </div>
 
-<div className="flex flex-col gap-y-12 px-4">
+<div className="flex flex-col gap-y-12 px-4 z-50">
 <div className=" flex flex-col lg:flex-row gap-4 items-center">
-  <h1 className="text-gray-800 dark:text-gray-300">I am Netochukwu and i build:</h1>
+  <h1 className="text-xl text-gray-800 dark:text-gray-100">I am Netochukwu and i build:</h1>
 <RotatingText
 texts={[
   'Online Store websites',  

@@ -2,6 +2,7 @@ import Image from "next/image"
 import { MoveDown, Origami} from "lucide-react"
 import BounceCards from "@/blocks/Components/BounceCards/BounceCards";
 import Masonry from "../components/mansonry";
+import FadeContent from "@/blocks/Animations/FadeContent/FadeContent";
 const AboutPage = () => {
   const images = [
     "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*QJnvahq_EBdUGjYQUYrhvA.png",
@@ -44,6 +45,7 @@ const AboutPage = () => {
         <p className="px-3 my-5 text-justify leading-relaxed text-lg">Experienced Full-Stack Web Developer specializing in Javascript, Node Js, Typescript, Vue.js, Next.js, MySQL, MongoDb, and more. I love to explore new tools and technologies.</p>
         
     <div>
+    <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
     <div className="relative w-full bg-blue-300 dark:bg-black/25 py-12 rounded-lg shadow-lg">
     <h3 className="text-3xl font-light  text-center py-3 px-4">These are some of the tech stacks i use</h3>
     <div className="absolute inset-0 flex items-center justify-center">
@@ -61,12 +63,14 @@ const AboutPage = () => {
   enableHover={true}
 />
 </div>
+</FadeContent>
     </div>
 
       
       <div className="h-48  flex items-center justify-center">
         <MoveDown className="bg-blue-300/50 dark:bg-white/50 py-2 size-11 rounded-full"/>
       </div>
+      <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
       <div>
         <h2 className="text-3xl py-3 text-gray-800 dark:text-gray-200">About me</h2>
         <p className="text-lg leading-relaxed text-justify">  
@@ -77,6 +81,7 @@ My name is Amaugo Netochukwu Ronaldo. I&apos;m a passionate web developer specia
 
       </div>
       </div>
+</FadeContent>
       </section>
     </div>
   )

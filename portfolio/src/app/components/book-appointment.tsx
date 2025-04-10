@@ -1,7 +1,6 @@
 "use client";
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
-import {IconButton} from "@material-tailwind/react"
 import { Headset } from "lucide-react";
 export default function Appointment() {
   const fetchCal = async () => {
@@ -30,8 +29,8 @@ export default function Appointment() {
 
   return (
     
-    <button className="fixed rounded-full z-50 bottom-5 right-5 bg-[#1013d7] text-white dark:text-black dark:bg-cyan-300 hover:shadow-[#333333]/20 focus:shadow-[#333333]/20 active:shadow-[#333333]/10"   >
-      <a className="flex items-center py-2 px-3 gap-x-1" href="https://cal.com/netochukwu-codes/" target="_blank" rel="noopener noreferrer">
+    <button className="  fixed rounded-full z-50 bottom-8 right-5 bg-[#1013d7] text-white dark:text-black dark:bg-cyan-300 hover:shadow-[#333333]/20 focus:shadow-[#333333]/20 active:shadow-[#333333]/10"   >
+      <a className="flex items-center py-2 px-3 gap-x-1" href="https://cal.com/netochukwu-codes/" target="_parent" rel="noopener noreferrer">
       <Headset size={36} className="" />
       Chat with me
       </a>

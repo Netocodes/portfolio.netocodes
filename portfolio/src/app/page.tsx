@@ -1,15 +1,21 @@
 import HeroSection from "./home/herosection";
 import AboutPage from "./home/aboutPage";
-import Appointment from "./components/book-appointment";
+import WorkExperience from "./home/workExperience";
+import FadeContent from "@/blocks/Animations/FadeContent/FadeContent";
 export default function Home() {
   return (
     <div>
       <div className=" bg-cyan-50 dark:bg-blue-950">
-<div className="bg-grad-light">
-<HeroSection />
-</div>      <AboutPage />
-    <Appointment />
-
+      <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+       <HeroSection />
+</FadeContent>
+       <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+       <AboutPage />
+</FadeContent>
+       
+       <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+       <WorkExperience />
+</FadeContent>
     </div>
     </div>
   );

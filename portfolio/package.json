@@ -30,6 +30,7 @@
     "matter-js": "^0.20.0",
     "meshline": "^3.3.1",
     "next": "15.2.4",
+    "next-cloudinary": "^6.16.0",
     "next-themes": "^0.4.6",
     "ogl": "^1.0.11",
     "postcss": "^8.5.3",

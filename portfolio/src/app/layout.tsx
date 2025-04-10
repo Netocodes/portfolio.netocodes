@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "./components/footer";
 import NavbarComp from "./components/navbar";
+import  Appointment  from "./components/book-appointment";
 
 export const metadata: Metadata = {
   title: "Netochukwu Codes || Fullstack developer & Tech enthusiast ",
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 };
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from "./components/theme-provider";
+import SplashCursor from "@/blocks/Animations/SplashCursor/SplashCursor";
  
 const inter = Inter({
   subsets: ['latin'],
@@ -30,7 +32,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-
+<SplashCursor />
         <header className="">
         <NavbarComp />
         </header>
@@ -39,6 +41,8 @@ export default function RootLayout({
        <Footer />
 
         </footer>
+<Appointment />
+
           </ThemeProvider>
         
         
