@@ -1,11 +1,14 @@
 "use client";
 
 import ModeToggle from "./mode-toggle";
-import { AvatarDemo } from "./avatar";
 import Link from "next/link";
+import LogoMain from "../assets/logoMain.png"
+import LogoMain2 from "../assets/logoMain2.png"
+import Image from "next/image";
 import SocialIcons from "./socialIcons";
 import { useState } from "react";
 import { AlignCenter, ShieldX } from "lucide-react";
+import { AvatarDemo } from "./avatar";
  type navType = {
   id: number;
   link: string;
@@ -29,9 +32,10 @@ const navLinks: navType[] = [
 <div className="flex items-center justify-between w-full">
 
 <div className="flex items-center gap-x-3">
-          <AvatarDemo />
+  <AvatarDemo />
            <Link  href={"/about"}>
-           <h2 className="text-xl">Neto Codes</h2>
+          <Image src={LogoMain} alt="My main logo" className="w-40 bg-transparent rounded-lg  h-6.5 hidden dark:block " width={100} height={100}></Image>
+          <Image src={LogoMain2} alt="My main logo" className="w-40 bg-transparent rounded-lg  h-6.5 dark:hidden" width={100} height={100}></Image>
            </Link>
 </div>
            {navLinks && (

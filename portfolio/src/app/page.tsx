@@ -2,6 +2,7 @@ import HeroSection from "./home/herosection";
 import AboutPage from "./home/aboutPage";
 import WorkExperience from "./home/workExperience";
 import FadeContent from "@/blocks/Animations/FadeContent/FadeContent";
+import Projects from "./home/projects";
 export default function Home() {
   return (
     <div>
@@ -15,6 +16,9 @@ export default function Home() {
        
        <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
        <WorkExperience />
+</FadeContent>
+       <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+       <Projects />
 </FadeContent>
     </div>
     </div>

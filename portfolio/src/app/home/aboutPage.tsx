@@ -66,7 +66,7 @@ const AboutPage = () => {
 </FadeContent>
     </div>
 
-      
+    
       <div className="h-48  flex items-center justify-center">
         <MoveDown className="bg-blue-300/50 dark:bg-white/50 py-2 size-11 rounded-full"/>
       </div>

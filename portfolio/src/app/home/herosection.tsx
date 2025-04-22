@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
  
   return (
-    <div className="grad-dark  h-[90dvh] lg:h-dvh  relative flex flex-col gap-y-8 items-center justify-center ">
+    <div className="grad-dark  h-[90dvh] lg:h-dvh text-[#f68011]  relative flex flex-col gap-y-8 items-center justify-center ">
  <div className="absolute w-full h-full  left-1/2 -translate-x-1/2  overflow-hidden">
  <Particles
-    particleColors={['#eee', '#28a0eb', '#342bd6', '#3fda20', '#20da99']}
+    particleColors={['#eee', '#28a0eb', '#f68011', '#3fda20', '#20da99']}
     particleCount={500}
     particleSpread={20}
     speed={0.3}
@@ -59,7 +59,7 @@ texts={[
        <h1 className="text-3xl md:text-5xl font-bold text-center text-gray-800 dark:text-gray-200">
           Welcome to My Portfolio
         </h1>
-        <p className="text-lg text-center text-gray-600 dark:text-gray-400">
+        <p className="text-lg text-center text-gray-700 dark:text-gray-300">
           Discover my projects, skills, and experiences.
         </p>
         <div className="flex gap-x-4">
