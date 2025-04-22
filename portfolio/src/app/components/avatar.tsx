@@ -7,7 +7,7 @@ import {
   export const AvatarDemo = () => {
     return (
       <Avatar>
-        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+        <AvatarImage src="..\assets\avatar.png" alt="@Netocodes" />
         <AvatarFallback>Nc</AvatarFallback>
       </Avatar>
     )
