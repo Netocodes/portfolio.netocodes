@@ -1,7 +1,7 @@
 import { SquareArrowOutUpRight } from 'lucide-react'
 import Image1 from '../assets/auntyozy.png'
 import Image2 from "../assets/beautyofchiri.png"
-// import WorkImg from "../assets/work.png"
+import Image from 'next/image'
 type projectsProps = {
   id: number,
   src: string,
@@ -39,10 +39,11 @@ const Projects = () => {
 
   {data.map((item) => (
 
-      <div className="w-full mx-3 mt-6 flex flex-col self-start rounded-lg border bg-white dark:bg-blue-900 text-surface shadow-md dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0 group">
+      <div key={item.id} className="w-full mx-3 mt-6 flex flex-col self-start rounded-lg border bg-white dark:bg-blue-900 text-surface shadow-md dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0 group">
         
   <section className="relative block">
-    <img
+    <Image
+      width={1000}
       className="rounded-t-lg rounded-b-sm w-full"
       src={item.src}
       alt={item.alt}
