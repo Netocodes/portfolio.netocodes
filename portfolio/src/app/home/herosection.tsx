@@ -35,7 +35,7 @@ texts={[
   'News Platform websites',  
   'Job Board websites',  
 ]}
-  mainClassName="px-2 sm:px-2 text-3xl md:px-3 dark:bg-cyan-300 bg-blue-800 text-white  dark:text-black overflow-hidden py-3 lg:py-3 justify-center rounded-lg"
+  mainClassName="px-2 sm:px-2 text-lg md:text-3xl md:px-3 dark:bg-cyan-300 bg-blue-800 text-white  dark:text-black overflow-hidden py-3 lg:py-3 justify-center rounded-lg"
   staggerFrom={"last"}
   initial={{ y: "100%" }}
   animate={{ y: 0 }}

@@ -130,4 +130,5 @@
 }
 .grad-dark {
   background: conic-gradient(at right, #dcfce7, #0c4a6e, transparent);
+z-index: -1;
 }

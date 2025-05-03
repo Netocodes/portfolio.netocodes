@@ -8,6 +8,13 @@ import  Appointment  from "./components/book-appointment";
 export const metadata: Metadata = {
   title: "Netochukwu Codes || Fullstack developer & Tech enthusiast ",
   description: "",
+  // icons: {
+  //   icon: '/favicon.ico', 
+  //   other: {
+  //     rel: 'icon',
+  //     type: 'image/svg+xml',
+  //   },
+
 };
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from "./components/theme-provider";
@@ -24,6 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        
+      </head>
       <body className={inter.className}
       >
              <ThemeProvider

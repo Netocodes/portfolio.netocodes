@@ -1,32 +1,69 @@
 'use client'
 
-type TimelineData = {
-    id: number;
-    title: string;
-    role: string;
-    timeline: string
-}
+import { AvatarDemo } from "./avatar";
+import {dataProps} from "../home/workExperience"
 
-const WorkTimeline = ({DataProps}: {DataProps: TimelineData[]}) => {
-  const timelineData: TimelineData[] = DataProps
+
+const WorkTimeline = ({DataProps}: {DataProps: dataProps[]}) => {
+  const timelineData: dataProps[] = DataProps
   return (
-    <div>
+    <div className="w-full">
             <h3 className="text-2xl">Work Experience</h3>
-      <div className="flex w-full py-12 items-center justify-start px-6 ">
+      <div className="flex w-full py-12 items-center justify-start px-2 lg:px-6 ">
        
         
-<ol className="relative  scroll-mt-8 border-s-2 border-gray-200 dark:border-gray-300/75">  
+<ol className="relative w-full ">  
   {timelineData.map((item) => (
+// <!-- Timeline 
+<div key={item.id}>
+  {/* <!-- Heading --> */}
+  <div className="ps-2 my-3 first:mt-0 ">
+    <h3 className="text-xs md:text-lg font-medium uppercase text-sky-700 dark:text-sky-200">
+      {item.timeline}
+    </h3>
+  </div>
+  {/* <!-- End Heading --> */}
 
-<div key={item.id} className="flex  px-5 items-center gap-x-7 md:px-20 justify-between w-full">
-    <li className="flex flex-col gap-y-3 mb-10 ms-4">
-        <div className="absolute w-3 h-3 bg-gray-500 py-1 rounded-full  -start-[6px] border-2 border-blue-500  dark:border-blue-500 dark:bg-gray-700"></div>
-        <h3 className="text-2xl font-semibold text-blue-600 dark:text-cyan-200">{item.title}</h3>
-        <strong className="text-gray-600 dark:text-gray-300">{item.role}</strong>
-        <time className="mb-1 text-sm right-0 font-normal leading-none text-gray-500 dark:text-gray-400">{item.timeline}</time>
-      
-    </li>
+  {/* <!-- Item --> */}
+  <div className="flex w-full gap-x-3 md:px-5 py-3 relative group rounded-lg hover:bg-gray-100 dark:hover:bg-white/10">
+    <a className="z-1 absolute inset-0" href={item.link} ></a>
+
+    {/* <!-- Icon --> */}
+    <div className="relative  last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-3.5 after:w-[1px] after:-translate-x-[0.5px] after:bg-gray-700 dark:after:bg-sky-200 dark:group-hover:after:bg-sky-300">
+      <div className="relative z-10 size-7 flex justify-center items-center">
+        <div className="size-2 rounded-full bg-blue-500 border-4 border-sky-300 group-hover:border-gray-600 dark:bg-neutral-500 dark:border-neutral-600 dark:group-hover:border-neutral-600"></div>
+      </div>
+    </div>
+    {/* <!-- End Icon --> */}
+
+    {/* <!-- Right Content --> */}
+    <div className="grow py-1 px-4 w-full">
+      <h3 className="flex text-md md:text-xl gap-x-1.5 font-semibold text-gray-800 dark:text-white">
+       {item.title}
+      </h3>
+      <p className="mt-1 ml-1 text-sm text-gray-600 dark:text-neutral-400">
+       {item.role}
+      </p>
+      <button type="button" className="mt-1 -ms-1 p-1 relative z-10 inline-flex items-center gap-x-2 text-md rounded-lg border border-transparent text-gray-600 hover:bg-white hover:shadow-2xs disabled:opacity-50 disabled:pointer-events-none dark:text-sky-200 dark:hover:bg-neutral-800">
+        <AvatarDemo />
+        Netocodes
+      </button>
+    </div>
+    {/* <!-- End Right Content --> */}
+  </div>
+  {/* <!-- End Item --> */}
+
+
+
+ 
+
+
+
 </div>
+
+
+
+
   ))}        
 
 </ol>

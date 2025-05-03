@@ -36,7 +36,7 @@ const AboutPage = () => {
   ];
   return (
     <div className="">
-      <section className="  w-full mt-12 backdrop-blur-lg   lg:max-w-7/12 mx-auto px-9 lg:px-6 overflow-hidden"
+      <div className="  w-full mt-12 backdrop-blur-lg   lg:max-w-7/12 mx-auto px-9 lg:px-6 overflow-hidden"
     >
         <div className="w-full py-4">
             <Image src={"https://muhaiminshihab.github.io/assets/images/author_1.jpg"} className="rounded-full shadow-2xl size-28 object-center object-cover  " alt="Profile Image"  width={100} height={100}/>
@@ -82,7 +82,7 @@ My name is Amaugo Netochukwu Ronaldo. I&apos;m a passionate web developer specia
       </div>
       </div>
 </FadeContent>
-      </section>
+      </div>
     </div>
   )
 }
