@@ -56,7 +56,7 @@ const Projects = () => {
   ]
  const activeTest = (id :number) => {
   setClicked(!clicked)
-
+console.log(id)
 
  }
   return (
