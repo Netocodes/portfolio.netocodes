@@ -5,6 +5,7 @@ import Image2 from "../assets/beautyofchiri.png";
 import Image3 from "../assets/medicalplus.png";
 import Image4 from "../assets/netocodes.png";
 import Image from 'next/image'
+import { useState } from 'react';
 type projectsProps = {
   id: number,
   src: string,
@@ -14,6 +15,7 @@ type projectsProps = {
   description: string
 }
 const Projects = () => {
+  const [clicked, setClicked] = useState<boolean>(false)
   const data: projectsProps[] = [
     
     {
@@ -52,11 +54,11 @@ const Projects = () => {
    
    
   ]
-  const clicked = (id: number) => {
-    const item = data.find((item) => item.id === id)
-    if (!item) return
-    
-  }
+ const activeTest = (id :number) => {
+  setClicked(!clicked)
+
+
+ }
   return (
     <div className='w-full lg:w-7/12 px-8 mx-auto'>
         <h3 className='text-lg font-semibold tracking-wider'>Projects</h3>
@@ -64,9 +66,12 @@ const Projects = () => {
 
   {data.map((item) => (
 
-      <div onClick={() => clicked(item.id)} key={item.id} className="w-full mt-6 flex flex-col self-start rounded-lg border bg-white dark:bg-blue-900 text-surface shadow-md dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0 group">
+      <div  key={item.id} className="w-full mt-6 flex flex-col self-start rounded-lg border bg-white dark:bg-blue-900 text-surface shadow-md dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0 group">
         <a href={item.link} target='_blank'></a>
-  <section className="relative block">
+  <section onClick={() => {
+    activeTest(item.id)
+
+  }} className="relative block">
     <Image
       width={1000}
       height={1000}
@@ -74,7 +79,27 @@ const Projects = () => {
       src={item.src}
       alt={item.alt}
     />
-    <div className="absolute bottom-0  inset-0 bg-black/75 flex flex-col   items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-t-lg rounded-b-sm">
+    {/* copied text:     <button 
+    class="peer" 
+    aria-expanded="false"
+  >
+    Hover/Focus/Tap Me
+  </button>
+  
+  <!-- Hidden content -->
+  <div class="
+    opacity-0
+    group-hover:opacity-100
+    peer-focus:opacity-100
+    peer-active:opacity-100
+    transition-opacity duration-300
+  " */}
+
+ <div className={`absolute bottom-0 z-50!  inset-0 bg-black/75 flex flex-col items-center justify-center text-white opacity-0
+    group-hover:opacity-100
+    peer-focus-visible:opacity-100
+    peer-active:opacity-100
+    transition-opacity duration-300  rounded-t-lg rounded-b-sm`}>
 <a href={item.link} className='absolute top-0 right-0 p-4 '>
   <SquareArrowOutUpRight className='text-white hover:text-blue-500' size={20} />
 </a>
@@ -85,6 +110,12 @@ const Projects = () => {
     </p>
  </div>
     </div>
+    <button 
+    className="absolute top-5 peer" 
+    aria-expanded="false"
+  >
+    Hover/Focus/Tap Me
+  </button>
   </section>
   
 </div>

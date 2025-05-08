@@ -31,5 +31,9 @@ module.exports = {
       
     },
     
-    plugins: [],
+    plugins: [
+      function({ addVariant }) {
+        addVariant('group-active', ':merge(.group):active &');
+      },
+    ],
   }

@@ -18,8 +18,9 @@ export const metadata: Metadata = {
 };
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from "./components/theme-provider";
-import SplashCursor from "@/blocks/Animations/SplashCursor/SplashCursor";
- 
+// import SplashCursor from "@/blocks/Animations/SplashCursor/SplashCursor";s
+ import {Analytics} from "@vercel/analytics/react"
+import ClickSpark from "@/blocks/Animations/ClickSpark/ClickSpark";
 const inter = Inter({
   subsets: ['latin'],
 })
@@ -31,10 +32,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        
-      </head>
-      <body className={inter.className}
+      <ClickSpark
+  sparkColor='#000'
+  sparkSize={10}
+  sparkRadius={15}
+  sparkCount={8}
+  duration={400}
+  
+>
+      <body className={inter.className+ "absolute"}
       >
              <ThemeProvider
             attribute="class"
@@ -42,7 +48,9 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-<SplashCursor />
+{/* <SplashCursor /> */}
+
+
         <header className="">
         <NavbarComp />
         </header>
@@ -56,8 +64,9 @@ export default function RootLayout({
           </ThemeProvider>
         
         
-        
+        <Analytics />
       </body>
+      </ClickSpark>
     </html>
   );
 }
