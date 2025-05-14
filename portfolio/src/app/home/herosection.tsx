@@ -2,6 +2,7 @@
 
 import Particles from "@/blocks/Backgrounds/Particles/Particles";
 import RotatingText from "@/blocks/TextAnimations/RotatingText/RotatingText";
+import TrueFocus from "@/blocks/TextAnimations/TrueFocus/TrueFocus";
 import { Button } from "@/components/ui/button";
 const HeroSection = () => {
  
@@ -59,9 +60,17 @@ texts={[
        <h1 className="text-3xl md:text-5xl font-bold text-center text-gray-800 dark:text-gray-200">
           Welcome to My Portfolio
         </h1>
-        <p className="text-lg text-center text-gray-700 dark:text-gray-300">
-          Discover my projects, skills, and experiences.
-        </p>
+     
+        <div className="text-lg  text-center text-gray-800 dark:text-gray-300">
+        <TrueFocus 
+sentence="Discover my projects, skills, and experiences."
+manualMode={false}
+blurAmount={5}
+borderColor="red"
+animationDuration={0.8}
+pauseBetweenAnimations={0}
+/>
+        </div>
         <div className="flex gap-x-4">
           <Button className="bg-[#1013d7] text-white cursor-pointer dark:text-black dark:bg-cyan-300" size="lg">
             View Projects

@@ -1,6 +1,6 @@
 'use client'
 
-import { AvatarDemo } from "./avatar";
+import {  AvatarTimeline } from "./avatar";
 import {dataProps} from "../home/workExperience"
 
 
@@ -45,7 +45,7 @@ const WorkTimeline = ({DataProps}: {DataProps: dataProps[]}) => {
        {item.role}
       </p>
       <button type="button" className="mt-1 -ms-1 p-1 relative z-10 inline-flex items-center gap-x-2 text-md rounded-lg border border-transparent text-gray-600 hover:bg-white hover:shadow-2xs disabled:opacity-50 disabled:pointer-events-none dark:text-sky-200 dark:hover:bg-neutral-800">
-        <AvatarDemo />
+        <AvatarTimeline />
         Netocodes
       </button>
     </div>

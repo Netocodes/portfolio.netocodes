@@ -3,6 +3,7 @@ import { MoveDown, Origami} from "lucide-react"
 import BounceCards from "@/blocks/Components/BounceCards/BounceCards";
 import Masonry from "../components/mansonry";
 import FadeContent from "@/blocks/Animations/FadeContent/FadeContent";
+import MyImage from "../assets/myImage.jpg"
 const AboutPage = () => {
   const images = [
     "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*QJnvahq_EBdUGjYQUYrhvA.png",
@@ -35,14 +36,14 @@ const AboutPage = () => {
     "rotate(-5deg) translate(150px)"
   ];
   return (
-    <div className="">
-      <div className="  w-full mt-12 backdrop-blur-lg   lg:max-w-7/12 mx-auto px-9 lg:px-6 overflow-hidden"
+    <div id="Portfolio" className="">
+      <div  className="  w-full mt-12 backdrop-blur-lg   lg:max-w-7/12 mx-auto px-9 lg:px-6 overflow-hidden"
     >
         <div className="w-full py-4">
-            <Image src={"https://muhaiminshihab.github.io/assets/images/author_1.jpg"} className="rounded-full shadow-2xl size-28 object-center object-cover  " alt="Profile Image"  width={100} height={100}/>
+            <Image src={MyImage} className="rounded-full shadow-2xl size-28 object-center object-cover  " alt="Profile Image"  width={100} height={100}/>
         </div>
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold ">😉Hi, I&apos;m NetoCodes </h1>
-        <p className="px-3 my-5 text-justify leading-relaxed text-lg">Experienced Full-Stack Web Developer specializing in Javascript, Node Js, Typescript, Vue.js, Next.js, MySQL, MongoDb, and more. I love to explore new tools and technologies.</p>
+        <p className="px-3 my-5  leading-relaxed text-lg">Experienced Full-Stack Web Developer specializing in Javascript, Node Js, Typescript, Vue.js, Next.js, MySQL, MongoDb, and more. I love to explore new tools and technologies.</p>
         
     <div>
     <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
@@ -73,7 +74,7 @@ const AboutPage = () => {
       <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
       <div>
         <h2 className="text-3xl py-3 text-gray-800 dark:text-gray-200">About me</h2>
-        <p className="text-lg leading-relaxed text-justify">  
+        <p className="text-lg leading-relaxed">  
 My name is Amaugo Netochukwu Ronaldo. I&apos;m a passionate web developer specializing in <i className="text-lg"> Node.js, JavaScript, TypeScript, React.js, Next.js, Vue.js, MySQL, MongoDB, and Tailwind CSS </i>. With over four years of experience, I’ve helped startups build strong online identities through clean, efficient code. I thrive on turning ideas into reality and am always eager to explore new technologies that push boundaries. Resourceful, driven, and committed—I’m here to solve problems and deliver results.  
 </p>  
       <div className="py-4">

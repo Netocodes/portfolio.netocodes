@@ -21,8 +21,8 @@ import { AvatarDemo } from "./avatar";
   };
 const navLinks: navType[] = [
   {id: 1, link: "/projects", title: "Projects"},
-  {id: 2, link: "/portfolio", title: "Portfolio"},
-  {id: 3, link: "/contact", title: "Contact"}
+  {id: 2, link: "/#Portfolio", title: "Portfolio"},
+  {id: 3, link: "/#ContactMe", title: "Contact"}
 ]
   return (
     <>
@@ -39,9 +39,9 @@ const navLinks: navType[] = [
            </Link>
 </div>
            {navLinks && (
-            <ul className="hidden lg:flex underline underline-offset-4 decoration-[#1013d7] dark:decoration-cyan-300 gap-x-5 items-center justify-end">
+            <ul className="hidden  lg:flex underline underline-offset-4 decoration-[#1013d7] dark:decoration-cyan-300 gap-x-5 items-center justify-end">
               {navLinks.map((nav) => (
-                <li key={nav.id} className="hover:bg-background/30 rounded-lg">
+                <li key={nav.id} className="hover:bg-background/30 hover:py-3 hover:px-4 transition-all ease-in duration-300 rounded-lg">
                   <Link href={nav.link}>{nav.title}</Link>
                 </li>
               ))}

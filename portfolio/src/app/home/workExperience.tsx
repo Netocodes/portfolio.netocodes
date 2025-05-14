@@ -4,8 +4,8 @@ export type dataProps = {
   id: number,
   title: string,
   role: string,
-  timeline: string
-  link: string
+  timeline: string,
+  link: string,
 
 }
 const WorkExperience = () => {

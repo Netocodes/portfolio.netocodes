@@ -32,15 +32,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ClickSpark
-  sparkColor='#000'
-  sparkSize={10}
-  sparkRadius={15}
-  sparkCount={8}
-  duration={400}
   
->
-      <body className={inter.className+ "absolute"}
+      <body className={inter.className}
       >
              <ThemeProvider
             attribute="class"
@@ -48,25 +41,33 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-{/* <SplashCursor /> */}
+   <ClickSpark
+  sparkColor='#93ec33'
+  sparkSize={20}
+  sparkRadius={20}
+  sparkCount={12}
+  duration={400}
+  
+>
 
 
-        <header className="">
+      
         <NavbarComp />
-        </header>
+        
         {children}  
-        <footer className="w-full  bottom-0">
+        <footer className="w-full text-[#93ec33]  bottom-0 ">
        <Footer />
 
         </footer>
 <Appointment />
-
+</ClickSpark>
           </ThemeProvider>
         
         
         <Analytics />
+     
       </body>
-      </ClickSpark>
+  
     </html>
   );
 }
