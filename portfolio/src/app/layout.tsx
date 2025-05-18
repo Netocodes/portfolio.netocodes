@@ -6,9 +6,30 @@ import NavbarComp from "./components/navbar";
 import  Appointment  from "./components/book-appointment";
 
 export const metadata: Metadata = {
-  title: "Netochukwu Codes || Fullstack Developer (React/Node.js) | Open for Work",
+  title: "✨Netochukwu Codes: Freelance Fullstack Developer | Hire Me",
   description: "Professional Fullstack Developer specializing in React, Next.js, Node.js & PostgreSQL. Available for freelance projects and full-time roles. Let's build high-performance web apps together!",
   keywords: [
+    "netochukwu codes",
+    "netocode",
+    "netocodes portfolio",
+    "netochukwu portfolio",
+    "netocodes",
+    "neto website developer",
+    "best web developer in enugu state",
+    "best web developer in nigeria",
+    "best web developer in abuja",
+    "best web developer in lagos",
+    "best web developer in abia",
+    "best web developer in imo",
+    "best web developer in anambra",
+    "best web developer in ebonyi",
+    "best web developer in enugu",
+    "best web developer in delta",
+    "best web developer in rivers",
+    "best web developer in akwa ibom",
+    "best web developer in cross river",
+    "best web developer in benue",
+    "netochukwu ronaldo Amaugo",
     "Freelance Fullstack Developer",
     "React Developer for Hire",
     "Node.js Contractor",
@@ -41,11 +62,11 @@ export const metadata: Metadata = {
       { url: '/avatar.png' }, // Default favicon
      
     ],
-    shortcut: '/shortcut-icon.png',
-    apple: '/apple-touch-icon.png', // For iOS homescreen
+    shortcut: '/avatar.png',
+    apple: '/avatar.png', // For iOS homescreen
     other: {
       rel: 'mask-icon',
-      url: '/safari-pinned-tab.svg',
+      url: '/avatar.png',
       color: '#5bbad5' // Safari pinned tab color
     }
   },
