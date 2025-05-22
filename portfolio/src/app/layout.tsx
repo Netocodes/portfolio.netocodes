@@ -4,6 +4,14 @@ import "./globals.css";
 import Footer from "./components/footer";
 import NavbarComp from "./components/navbar";
 import  Appointment  from "./components/book-appointment";
+import type { Viewport } from 'next'
+ 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#b9cfed' },
+    { media: '(prefers-color-scheme: dark)', color: '#0a346a' },
+  ],
+}
 
 export const metadata: Metadata = {
   title: "✨Netochukwu Codes: Freelance Fullstack Developer | Hire Me",
@@ -11,6 +19,10 @@ export const metadata: Metadata = {
   keywords: [
     "netochukwu codes",
     "netocode",
+    "silver fox coder",
+    "neto bbl website",
+    "too much money website",
+    "ronaldo web Developer",
     "netocodes portfolio",
     "netochukwu portfolio",
     "netocodes",
@@ -100,11 +112,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://netocodes.pro'),
   alternates: {
     canonical: '/',
-  },
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#b9cfed' },
-    { media: '(prefers-color-scheme: dark)', color: '#0a346a' },
-  ],
+  }
 };
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from "./components/theme-provider";

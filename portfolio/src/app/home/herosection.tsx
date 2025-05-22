@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
  
   return (
-    <div className="grad-dark  h-[90dvh] lg:h-dvh text-[#f68011]  relative flex flex-col gap-y-8 items-center justify-center ">
- <div className="absolute w-full h-full  left-1/2 -translate-x-1/2  overflow-hidden">
+    <div className="  h-[90dvh] lg:h-dvh  relative flex flex-col gap-y-8 items-center justify-center ">
+ <div className="absolute grad-dark w-full h-full  left-1/2 -translate-x-1/2  overflow-hidden">
  <Particles
     particleColors={['#eee', '#28a0eb', '#f68011', '#3fda20', '#20da99']}
     particleCount={500}

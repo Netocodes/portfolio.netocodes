@@ -131,6 +131,6 @@
   background: conic-gradient(at bottom left, #e0e7ff, #22d3ee, #d946ef);
 }
 .grad-dark {
-  background: conic-gradient(at right, #dcfce7, #0c4a6e, transparent);
+  background: conic-gradient(at right, #dcfce7, #0c4a6e, transparent) !important;
 z-index: -1;
 }

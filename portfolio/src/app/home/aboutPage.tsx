@@ -43,7 +43,7 @@ const AboutPage = () => {
             <Image src={MyImage} className="rounded-full shadow-2xl size-28 object-center object-cover  " alt="Profile Image"  width={100} height={100}/>
         </div>
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold ">😉Hi, I&apos;m NetoCodes </h1>
-        <p className="px-3 my-5  leading-relaxed text-lg">Experienced Full-Stack Web Developer specializing in Javascript, Node Js, Typescript, Vue.js, Next.js, MySQL, MongoDb, and more. I love to explore new tools and technologies.</p>
+        <p className="px-3 my-5  leading-relaxed text-lg">Experienced Full-Stack Web Developer specializing in Javascript, Node Js, Typescript, Vue.js, Next.js, postgreSQL, MongoDb, and more. I love to explore new tools and technologies.</p>
         
     <div>
     <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>

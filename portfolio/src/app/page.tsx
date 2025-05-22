@@ -1,3 +1,4 @@
+
 import HeroSection from "./home/herosection";
 import AboutPage from "./home/aboutPage";
 import WorkExperience from "./home/workExperience";
@@ -5,7 +6,8 @@ import ContactUs from "./home/contact";
 import FadeContent from "@/blocks/Animations/FadeContent/FadeContent";
 import Projects from "./home/projects";
 
-export default function Home() {
+
+const Home = async() =>{
   return (
     <div>
     
@@ -59,3 +61,4 @@ export default function Home() {
     </div>
   );
 }
+export default Home;

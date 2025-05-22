@@ -25,7 +25,7 @@ const WorkTimeline = ({DataProps}: {DataProps: dataProps[]}) => {
   {/* <!-- End Heading --> */}
 
   {/* <!-- Item --> */}
-  <div className="flex w-full gap-x-3 md:px-5 py-3 relative group rounded-lg hover:bg-gray-100 dark:hover:bg-white/10">
+  <div className="flex w-full md:gap-x-3 md:px-5 py-3 relative group rounded-lg hover:bg-gray-100 dark:hover:bg-white/10">
     <a className="z-1 absolute inset-0" href={item.link} ></a>
 
     {/* <!-- Icon --> */}
@@ -37,11 +37,12 @@ const WorkTimeline = ({DataProps}: {DataProps: dataProps[]}) => {
     {/* <!-- End Icon --> */}
 
     {/* <!-- Right Content --> */}
-    <div className="grow py-1 px-4 w-full">
-      <h3 className="flex text-md md:text-xl gap-x-1.5 font-semibold text-gray-800 dark:text-white">
+    <div className="grow py-1 px-2 md:px-4 w-full">
+      <h2 className="text-xl my-1 md:text-2xl font-semibold">{item.name}</h2>
+      <h3 className="flex text-lg md:text-xl gap-x-1.5 font-semibold text-gray-700 dark:text-white">
        {item.title}
       </h3>
-      <p className="mt-1 ml-1 text-sm text-gray-600 dark:text-neutral-400">
+      <p className="mt-1 ml-1 text-sm text-gray-800 dark:text-neutral-400">
        {item.role}
       </p>
       <button type="button" className="mt-1 -ms-1 p-1 relative z-10 inline-flex items-center gap-x-2 text-md rounded-lg border border-transparent text-gray-600 hover:bg-white hover:shadow-2xs disabled:opacity-50 disabled:pointer-events-none dark:text-sky-200 dark:hover:bg-neutral-800">

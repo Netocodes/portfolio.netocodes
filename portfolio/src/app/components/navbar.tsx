@@ -35,7 +35,7 @@ const navLinks: navType[] = [
   <AvatarDemo />
            <Link  href={"/about"}>
           <Image src={LogoMain} alt="My main logo" className="w-40 bg-transparent rounded-lg  h-6.5 hidden dark:block " width={100} height={100}></Image>
-          <Image src={LogoMain2} alt="My main logo" className="w-40 bg-transparent rounded-lg  h-6.5 dark:hidden" width={100} height={100}></Image>
+          <Image src={LogoMain2} priority={true} alt="My main logo" className="w-40 bg-transparent rounded-lg  h-6.5 dark:hidden" width={100} height={100}></Image>
            </Link>
 </div>
            {navLinks && (
