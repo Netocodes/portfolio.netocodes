@@ -5,6 +5,8 @@ import Footer from "./components/footer";
 import NavbarComp from "./components/navbar";
 import  Appointment  from "./components/book-appointment";
 import type { Viewport } from 'next'
+
+
  
 export const viewport: Viewport = {
   themeColor: [
@@ -18,7 +20,10 @@ export const metadata: Metadata = {
   description: "Professional Fullstack Developer specializing in React, Next.js, Node.js & PostgreSQL. Available for freelance projects and full-time roles. Let's build high-performance web apps together!",
   keywords: [
     "netochukwu codes",
-    "netocode",
+    "ecma java",
+    "ecma ja ja",
+    "ecma java",
+    "netocode website",
     "silver fox coder",
     "neto bbl website",
     "too much money website",
@@ -128,6 +133,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  
+
   return (
     <html lang="en">
   
@@ -147,17 +155,14 @@ export default function RootLayout({
   duration={400}
   
 >
-
-
-      
+         
+   
         <NavbarComp />
-        
-        {children}  
+        {children}
         <footer className="w-full text-[#93ec33]  bottom-0 ">
-       <Footer />
-
+          <Footer />
         </footer>
-<Appointment />
+        <Appointment />
 </ClickSpark>
           </ThemeProvider>
         

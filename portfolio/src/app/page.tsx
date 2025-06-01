@@ -1,64 +1,13 @@
+import { Suspense } from "react"
+import HomeContent from "./home/homeContent"
+import Loading from "./loading"
 
-import HeroSection from "./home/herosection";
-import AboutPage from "./home/aboutPage";
-import WorkExperience from "./home/workExperience";
-import ContactUs from "./home/contact";
-import FadeContent from "@/blocks/Animations/FadeContent/FadeContent";
-import Projects from "./home/projects";
-
-
-const Home = async() =>{
+const Home = () => {
   return (
-    <div>
-    
-      <div className=" bg-cyan-50 dark:bg-blue-950">
-        <FadeContent
-          blur={true}
-          duration={1000}
-          easing="ease-out"
-          initialOpacity={0}
-        >
-          <HeroSection />
-        </FadeContent>
-        <FadeContent
-          blur={true}
-          duration={1000}
-          easing="ease-out"
-          initialOpacity={0}
-          
-        >
-          <AboutPage  />
-        </FadeContent>
-
-        <div>
-          <FadeContent
-            blur={true}
-            duration={1000}
-            easing="ease-out"
-            initialOpacity={0}
-          >
-            <WorkExperience />
-          </FadeContent>
-        </div>
-        <FadeContent
-          blur={true}
-          duration={1000}
-          easing="ease-out"
-          initialOpacity={0}
-        >
-          <Projects />
-        </FadeContent>
-        <FadeContent
-          blur={true}
-          duration={1000}
-          easing="ease-out"
-          initialOpacity={0}
-        >
-          <ContactUs />
-        </FadeContent>
-      </div>
-      
-    </div>
-  );
+    <Suspense fallback={<Loading />}>
+      <HomeContent />
+    </Suspense>
+  )
 }
-export default Home;
+
+export default Home

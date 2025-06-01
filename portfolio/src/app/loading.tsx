@@ -1,21 +1,26 @@
 "use client";
 import { Triangle } from "react-loader-spinner";
+import { useEffect, useState } from "react";
 
-const Loading = () => {
+export default function Loading() {
+  const [showLoader, setShowLoader] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowLoader(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!showLoader) return null;
+
   return (
-    <div className="!z-50 w-full bg-[#b9cfed] h-screen p-20 flex items-center justify-center">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#b9cfed] dark:bg-blue-950">
       <Triangle
         visible={true}
         height="120"
         width="120"
         color="#4539f5"
-        ariaLabel="triangle-loading"
-        wrapperStyle={{}}
-        wrapperClass=""
+        wrapperStyle={{ display: "block" }}
       />
     </div>
   );
-};
-
-export default Loading;
-// This is a loading component that can be used in the app
+}
