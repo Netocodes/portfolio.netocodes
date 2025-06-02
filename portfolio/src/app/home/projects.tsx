@@ -28,16 +28,16 @@ const Projects = () => {
       link: "https://www.bochbeautyandskincare.shop/productPage",
       title: "Beauty of chiri",
       description:
-        "An ecormerce store for skincare products based it turkey and skippes worldwide.",
+        "A skincare website made for a trusted client in turkey, shippes worldwide, This Website reduced her customer service stress greatly, and gained better attraction online.",
     },
     {
       id: 2,
       src: Image3.src,
       alt: "Medical Plus",
-      link: "https://auntyozyfoodies.vercel.app",
+      link: "https://netocodes.github.io/medical-plus/",
       title: "Personal project",
       description:
-        "Medical plus was built with TailwindCss for design and firebase for Autentication",
+        "Medical plus was built with tailwindCss, html, javascript etc.. for design and firebase for Autentication, made to book meetings with avalable doctors and nurses in a mordern style",
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ const Projects = () => {
       link: "https://netochukwucodes.vercel.app",
       title: "Neto Codes",
       description:
-        "A personal portfolio website showcasing my skills and projects.",
+        "My personal Portfolio, built to make you guys know that i know my stuff, this was made with the best react framework 'NEXT js', which books appointments for my buisness without delay.",
     },
     {
       id: 4,
@@ -55,8 +55,8 @@ const Projects = () => {
       link: "https://auntyozyfoodies.vercel.app",
       title: "Aunty Ozy Foodies",
       description:
-        "Interactive restaurant menu website: browse dishes, click to order via WhatsApp redirect.",
-    },
+        "At the side i also co-own a resturant, our dishes are sweet and we do prepare everything there just make an order and we will have it delivered.",
+    }
   ];
  
   return (

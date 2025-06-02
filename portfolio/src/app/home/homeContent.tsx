@@ -38,7 +38,7 @@ export default function HomeContent() {
         <Projects />
       </FadeContent>
       <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
-        <ContactUs />
+        <ContactUs  />
       </FadeContent>
     </div>
   );

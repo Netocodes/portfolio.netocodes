@@ -4,7 +4,7 @@ import Image2 from "../assets/beautyofchiri.png";
 import Image3 from "../assets/medicalplus.png";
 import Image4 from "../assets/netocodes.png";
 import Image from "next/image";
-import { Github } from "lucide-react";
+import { Github, Globe } from "lucide-react";
 const MainGallery = () => {
   const data: projectsProps[] = [
     {
@@ -30,7 +30,7 @@ const MainGallery = () => {
       githubLink: "https://github.com/Netocodes/medical-plus",
       liveLink: "https://netocodes.github.io/medical-plus/",
       description: " A healthcare portal built with Vite, Tailwind CSS, and Firebase (for secure login/registration) that connects patients to nearby hospitals, features medical blogs, and hosts charity events while managing guest access effectively. Increased engagement by 30%.",
-      techStack: ["Html", "TailwindCss", "JavaScript", "Vite", "Firebase"],
+      techStack: ["html", "tailwindCss", "JavaScript", "Vite", "Firebase", "git"],
     },
     {
       id: 3,
@@ -39,9 +39,9 @@ const MainGallery = () => {
       link: "https://netochukwucodes.vercel.app",
       detatilDescription: "High-performance web solutions built for scale. Leveraged Next.js for optimized rendering, TypeScript for bulletproof logic, and Tailwind for pixel-perfect UI. You need results? I engineer them.",
       title: "NetoCodes",
-      githubLink: "",
+      githubLink: "https://github.com/Netocodes/portfolio.netocodes/",
       liveLink: "https://netochukwucodes.vercel.app",
-      techStack: ["Next.js", "TypeScript", "TailwindCss"],
+      techStack: ["Next.js", "git", "Vercel", "TypeScript", "TailwindCss"],
       description:
         "A personal portfolio website showcasing my skills and projects.",
     },
@@ -52,9 +52,9 @@ const MainGallery = () => {
       link: "https://auntyozyfoodies.vercel.app",
       detatilDescription: "A student-centric menu platform for Enugu campuses, enabling quick browsing with WhatsApp-order integration. Drove 60% more inquiries via WhatsApp orders after launch. Built with React and Tailwind CSS for seamless mobile access",
       title: "Aunty Ozy Foodies",
-      githubLink:"",
+      githubLink:"https://github.com/Netocodes/Aunty-Ozy-Foodies/",
       liveLink: "https://auntyozyfoodies.vercel.app",
-      techStack: ["Html", "TailwindCss", "JavaScript"],
+      techStack: ["Html", "css", "git", "vercel", "TailwindCss", "JavaScript"],
       description:
         "Interactive restaurant menu website: browse dishes, click to order via WhatsApp redirect.",
     },
@@ -111,7 +111,7 @@ const MainGallery = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-x-2 bg-gray-900/50 text-white text-sm font-semibold rounded-lg px-4 py-2 hover:bg-gray-900/70 transition duration-300 ease-in-out"
                 >
-<Github />
+<Globe />
                     Live Demo
                 </a>
             </div>

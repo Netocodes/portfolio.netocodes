@@ -27,7 +27,7 @@ const ProjectContent = () => {
 />
     </div>
      <div className=' w-full max-w-3xl mx-auto  rounded-lg p-3'>
-      <MyWorks />
+       <MyWorks />
     </div>
    </div>
   )

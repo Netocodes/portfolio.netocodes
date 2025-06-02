@@ -38,8 +38,8 @@ const WorkTimeline = ({DataProps}: {DataProps: dataProps[]}) => {
 
     {/* <!-- Right Content --> */}
     <div className="grow py-1 px-2 md:px-4 w-full">
-      <h2 className="text-xl my-1 md:text-2xl font-semibold">{item.name}</h2>
-      <h3 className="flex text-lg md:text-xl gap-x-1.5 font-semibold text-gray-700 dark:text-white">
+      <h2 className="text-xl my-1 text-blue-200 md:text-2xl font-semibold">{item.name}</h2>
+      <h3 className="flex text-md md:text-lg underline underline-offset-4 decoration-blue-500 gap-x-1.5 font-normal text-gray-700 dark:text-white">
        {item.title}
       </h3>
       <p className="mt-1 ml-1 text-sm text-gray-800 dark:text-neutral-400">
