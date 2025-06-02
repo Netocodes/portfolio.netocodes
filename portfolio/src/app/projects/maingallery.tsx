@@ -106,7 +106,7 @@ const MainGallery = () => {
                     Source Code
                 </a>
                 <a
-                    href={item.githubLink}
+                    href={item.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-x-2 bg-gray-900/50 text-white text-sm font-semibold rounded-lg px-4 py-2 hover:bg-gray-900/70 transition duration-300 ease-in-out"
