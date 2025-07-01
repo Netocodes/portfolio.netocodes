@@ -134,3 +134,6 @@
   background: conic-gradient(at right, #dcfce7, #0c4a6e, transparent) !important;
 z-index: -1;
 }
+.list-style{
+  list-style-type: disc;
+}

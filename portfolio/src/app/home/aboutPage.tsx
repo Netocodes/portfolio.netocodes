@@ -43,7 +43,11 @@ const AboutPage = () => {
             <Image src={MyImage} className="rounded-full shadow-2xl size-28 object-center object-cover  " alt="Profile Image"  width={100} height={100}/>
         </div>
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold ">😉Hi, I&apos;m NetoCodes </h1>
-        <p className="px-3 my-5  leading-relaxed text-lg">Experienced Full-Stack Web Developer specializing in Javascript, Node Js, Typescript, Vue.js, Next.js, postgreSQL, MongoDb, and more. I love to explore new tools and technologies.</p>
+        <p className="px-3 my-5  leading-relaxed tracking-wider text-lg">Experienced Full-Stack Web Developer specializing in Javascript, Typescript, expressJs, NodeJs, I use unique database like  PostgresQl, MongoDB, MySQL. and frontend tools like React, Nextjs, Figma, Tailwindcss and alot more.</p>
+
+        <p className="px-3 my-5 text-gray-700 leading-relaxed tracking-wider text-md italic dark:text-gray-300">
+          &quot;When i&apos;m not working on your project there is a high possibilty that im out playing Snooker🎱😎, If you do Play 8ball then we must talk buisness after a game of pool🎱&quot;
+        </p>
         
     <div>
     <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
@@ -74,9 +78,24 @@ const AboutPage = () => {
       <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
       <div>
         <h2 className="text-3xl py-3 text-gray-800 dark:text-gray-200">About me</h2>
-        <p className="text-lg leading-relaxed">  
-My name is Amaugo Netochukwu Ronaldo. I&apos;m a passionate web developer specializing in <i className="text-lg"> Node.js, JavaScript, TypeScript, React.js, Next.js, Vue.js, MySQL, MongoDB, and Tailwind CSS </i>. With over four years of experience, I’ve helped startups build strong online identities through clean, efficient code. I thrive on turning ideas into reality and am always eager to explore new technologies that push boundaries. Resourceful, driven, and committed—I’m here to solve problems and deliver results.  
+        <p className="text-lg leading-relaxed tracking-wider"> 
+
+My name is Amaugo Netochukwu Ronaldo. I&apos;m a passionate web developer specializing in <i className="text-lg"> Node.js, JavaScript, TypeScript, React.js, Next.js, Vue.js, MySQL, MongoDB, postgresQl and Tailwind CSS </i>. With over four years of experience, I’ve helped startups build strong online identities through clean, efficient code. I thrive on turning ideas into reality and am always eager to explore new technologies that push boundaries. Resourceful, driven, and committed—I’m here to solve problems and deliver results.  
 </p>  
+
+<div className="my-8 text-lg leading-relaxed tracking-wider">
+<p>In my Fullstack Web-development journey i have learned:
+</p>
+<ul className="text-md text-gray-700 italic py-6 px-4 list-style flex flex-col gap-y-3 dark:text-gray-300">
+  <li>Nodejs and Express, <small>my go to for backend works</small></li>
+  <li>TypeScript for more robust JavaScript</li>
+  <li>React js for SPA <small>(Single Page Applications)</small></li>
+  <li>Next js for better Seo</li>
+  <li>Tailwindcss, Bootstrap for Mordern css.</li>
+</ul>
+<small className="italic">and alot more..., so i won&quot;t bore you 😉</small>
+</div>
+
       <div className="py-4">
       <Masonry  data={data} />
 
