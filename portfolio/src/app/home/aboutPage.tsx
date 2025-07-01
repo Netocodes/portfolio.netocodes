@@ -93,7 +93,7 @@ My name is Amaugo Netochukwu Ronaldo. I&apos;m a passionate web developer specia
   <li>Next js for better Seo</li>
   <li>Tailwindcss, Bootstrap for Mordern css.</li>
 </ul>
-<small className="italic">and alot more..., so i won&quot;t bore you 😉</small>
+<small className="italic"> and alot more..., so i won&quot;t bore you 😉</small>
 </div>
 
       <div className="py-4">
