@@ -15,7 +15,7 @@ const ContactUs = () => {
         <DecryptedText speed={250} animateOn='view' hover={true} text="Available for Work" />
         </h3>
       <p className=' w-full px-6 md:px-3 max-w-3xl text-center text-md md:text-xl'>Feel free to reach out! Send me a
-         <a className="text-blue-400 dark:text-cyan-300 px-3" href="#">direct message on LinkedIn</a> or Whatsapp with a clear question, and I’ll get back to you as soon as possible.
+         <a className="text-blue-400 dark:text-cyan-300 px-3" href="https://linkden.com/in/netocodes/">direct message on LinkedIn</a> or Whatsapp with a clear question, and I’ll get back to you as soon as possible.
 
 </p>
 <div className='flex items-center justify-center gap-x-4 mt-4'>
