@@ -5,7 +5,7 @@ import ContactBannerDark from "../assets/contact-bannerDark.png"
 import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa6'
 import DecryptedText from '@/blocks/TextAnimations/DecryptedText/DecryptedText'
 const PHONE_NUMBER = '+2349134730499'
-const URL_ENCODED_MESSAGE = "Hello There NetoCodes Are you Active for work?"
+const URL_ENCODED_MESSAGE = "Hello, NetoCodes Are you Active for work?"
 const ContactUs = () => {
   return (
     <div id='ContactMe' className='w-full flex flex-col items-center justify-center gap-y-4 mt-8 lg:mt-20 py-12'>
