@@ -1,11 +1,6 @@
 {
   "redirects": [
     {
-      "source": "https://netocodes.pro/:path*",
-      "destination": "https://www.netocodes.pro/:path*",
-      "permanent": true
-    },
-    {
       "source": "/:path*",
       "has": [
         {
