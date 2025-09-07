@@ -57,8 +57,8 @@ importers:
         specifier: ^11.18.2
         version: 11.18.2(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       gsap:
-        specifier: ^3.12.5
-        version: 3.12.7
+        specifier: ^3.13.0
+        version: 3.13.0
       jsrepo:
         specifier: ^1.45.3
         version: 1.45.3(typescript@5.8.2)(zod@3.24.2)
@@ -2233,8 +2233,8 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
-  gsap@3.12.7:
-    resolution: {integrity: sha512-V4GsyVamhmKefvcAKaoy0h6si0xX7ogwBoBSs2CTJwt7luW0oZzC0LhdkyuKV8PJAXr7Yaj8pMjCKD4GJ+eEMg==}
+  gsap@3.13.0:
+    resolution: {integrity: sha512-QL7MJ2WMjm1PHWsoFrAQH/J8wUeqZvMtHO58qdekHpCfhvhSL4gSiz6vJf5EeMP0LOn3ZCprL2ki/gjED8ghVw==}
 
   has-bigints@1.1.0:
     resolution: {integrity: sha512-R3pbpkcIqv2Pm3dUwgjclDRVmWpTJW2DcMzcIhEXEx1oh/CEMObMm3KLmRJOdvhM7o4uQBnwr8pzRK2sJWIqfg==}
@@ -5781,7 +5781,7 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  gsap@3.12.7: {}
+  gsap@3.13.0: {}
 
   has-bigints@1.1.0: {}
 
